@@ -42,7 +42,7 @@ Gõ link đến mã nguồn bài này vào đây
    -  [Product](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/UserServiceFactory.java)
    
 3.Endpoint của API cần phải phù hợp với các convention đã được học và được đánh version.
-   [api tạo user](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/UserResource.java)
+   -  [api tạo user](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/UserResource.java)
    
 4.Response của API cần ẩn trường password hoặc convert thành ******.
    -  [File config logback](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/resources/logback-spring.xml)
@@ -50,13 +50,13 @@ Gõ link đến mã nguồn bài này vào đây
    -  [File config log](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/LoggingConfiguration.java)
    
 5.Tích hợp Swagger để sinh tài liệu cho API.
-   [File config Swagger](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/SwaggerConfig.java)[Truy cập swagger](http://localhost:8080/swagger-ui.html)
+   -  [File config Swagger](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/SwaggerConfig.java)[Truy cập swagger](http://localhost:8080/swagger-ui.html)
    
 6.Cần kiểm tra email đã được đăng ký bởi người dùng khác hay chưa.
    *  Throw exception và có cơ chế error handling thích hợp.
-   *. Error message trong response body cần rõ ràng, cung cấp các thông tin cần thiết để xác định nguyên nhân lỗi, không chứa thông tin password.
+   *  Error message trong response body cần rõ ràng, cung cấp các thông tin cần thiết để xác định nguyên nhân lỗi, không chứa thông tin password.
    *  HTTP status code phù hợp.
-   [Config custom exception](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/error/ServiceRuntimeException.java)
+   -  [Config custom exception](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/error/ServiceRuntimeException.java)
    
 7.Cho phép log request body của API nhưng email và password cần được convert thành ******.
 
@@ -71,37 +71,37 @@ Gõ link đến mã nguồn bài này vào đây
    -  [Concreate Strategy Sort by opened](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/strategy/SortByOpened.java)
    
 3.RESTful API endpoint cần phải phù hợp với các convention đã được học và được đánh version.
-   [API](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CourseResource.java)
+   -  [API](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CourseResource.java)
    
 4.Áp dụng caching cho API để tăng performance.
    -  [Config caching](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/CachingConfiguration.java)
    -  [API check kết quả caching](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CachingController.java)
    
 5.Đảm bảo các chức năng của bài tập 2 vẫn hoạt động đúng.
-   [api tìm kiếm và sort](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CourseResource.java)
+   -  [api tìm kiếm và sort](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CourseResource.java)
 ## Trắc nghiệm
-    1.C
-    2.B
-    3.D
-    4.C
-    5.A
-    6.A
-    7.A
-    8.A
-    9.B
-    10.A
-    11.D
-    12.C
-    13.B
-    14.A
-    15.D
-    16.B
-    17.D
-    18.C
-    19.D
-    20.A
-    21.A
-    22.
-    23.
-    24.
+    1.C  2.B   3.D   4.C   5.A
+    6.A  7.A   8.A   9.B  10.A
+    11.D 12.C  13.B  14.A 15.D
+    16.B 17.D  18.C  19.D 20.A
+    21.A 22.C  23.D 24.A 25.C
+    
+    
+    
+    
+   
+    
+    
+   
+    
+    
+    
+    
+   
+    
+    
+    
+    
+   
+    
     25.
