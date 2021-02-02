@@ -20,7 +20,7 @@
 
 ## Phần 2: OOP và SOLID
 ### 1. Hãy lập trình Java để thực hiện thiết kế như hình vẽ
-Gõ link đến mã nguồn bài này vào đây. Đừng comment code. Nếu thực sự CleanCode thì không cần comment vẫn hiểu được.
+[GraphicsEditor](https://github.com/pydev97/clean-code/tree/main/GraphicsEditor/src/com/luvina)
 
 ### 2. Composition over Inheritance và DI
 Gõ link đến mã nguồn bài này vào đây
@@ -31,9 +31,9 @@ Gõ link đến mã nguồn bài này vào đây
 [File Dummy SQL]()
 ## Phần 4: Thiết kế RESTful API
 1.Entity:User, Teacher, Student
-[User]()
-[Teacher]()
-[Student]()
+[User](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/entity/User.java)
+[Teacher](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/entity/Teacher.java)
+[Student](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/entity/Student.java)
 2.Sử dụng Factory method để khởi tạo đối tượng: gồm 4 thành phần sau:
 [Creator](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/UserService.java)
 [Concreate StudentService](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/impl/StudentService.java)
