@@ -27,11 +27,47 @@ Gõ link đến mã nguồn bài này vào đây
 
 
 ## Phần 3: Thiết kế CSDL Quan hệ theo đặc tả
-
+[ảnh thể hiện quan hệ]()
+[File Dummy SQL]()
 ## Phần 4: Thiết kế RESTful API
-
+1.Entity:User, Teacher, Student
+[User]()
+[Teacher]()
+[Student]()
+2.Sử dụng Factory method để khởi tạo đối tượng: gồm 4 thành phần sau:
+[Creator](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/UserService.java)
+[Concreate StudentService](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/impl/StudentService.java)
+[Concreate TeacherService](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/impl/TeacherService.java)
+[Product](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/UserServiceFactory.java)
+3.Endpoint của API cần phải phù hợp với các convention đã được học và được đánh version.
+[api tạo user](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/UserResource.java)
+4.Response của API cần ẩn trường password hoặc convert thành ******.
+[File config logback](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/resources/logback-spring.xml)
+[File config masking parten](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/MaskingPatternLayout.java)
+[File config log](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/LoggingConfiguration.java)
+5.Tích hợp Swagger để sinh tài liệu cho API.
+[File config Swagger](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/SwaggerConfig.java)[Truy cập swagger](http://localhost:8080/swagger-ui.html)
+6.Cần kiểm tra email đã được đăng ký bởi người dùng khác hay chưa.
+Throw exception và có cơ chế error handling thích hợp.
+Error message trong response body cần rõ ràng, cung cấp các thông tin cần thiết để xác định nguyên nhân lỗi, không chứa thông tin password.
+HTTP status code phù hợp.
+[Config custom exception](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/error/ServiceRuntimeException.java)
+7.Cho phép log request body của API nhưng email và password cần được convert thành ******.
 ## Phần 5: Lập trình Restful API
-
+1.Tạo entity Course và sử dụng annotation @ManyToOne của Hibernate/Spring Data JPA để mapping quan hệ giữa Course và Teacher.
+[Course](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/entity/Course.java)
+[Enroll](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/entity/Enroll.java)
+2.Sử dụng Strategy pattern để cài đặt các thuật toán sắp xếp.
+[Strategy](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/SortStrategy.java)
+[Concreate Strategy Sort by name](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/strategy/SortByName.java)
+[Concreate Strategy Sort by opened](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/service/strategy/SortByOpened.java)
+3.RESTful API endpoint cần phải phù hợp với các convention đã được học và được đánh version.
+[API](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CourseResource.java)
+4.Áp dụng caching cho API để tăng performance.
+[Config caching](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/CachingConfiguration.java)
+[API check kết quả caching](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CachingController.java)
+5.Đảm bảo các chức năng của bài tập 2 vẫn hoạt động đúng.
+[api tìm kiếm và sort](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CourseResource.java)
 ## Trắc nghiệm
     1.C
     2.B
