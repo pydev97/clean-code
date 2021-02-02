@@ -14,13 +14,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "user")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Data
 public class User {
 
     @Id
-    @Column(name = "user_id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_sequence_generator")
-    @SequenceGenerator(name = "user_sequence_generator", allocationSize = 1)
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer userId;
     @Column(name = "name",nullable = false)
     private String name;

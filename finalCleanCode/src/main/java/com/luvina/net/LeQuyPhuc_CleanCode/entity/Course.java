@@ -4,15 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.Instant;
 import java.util.Collection;
 
@@ -20,7 +12,6 @@ import java.util.Collection;
 @Entity
 @Data
 public class Course {
-
     @Id
     @Column(name = "course_id")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "course_sequence_generator")
@@ -34,11 +25,18 @@ public class Course {
     private String location;
     @Column(name = "opened",nullable = false)
     private Instant opened;
-    @Column(name = "teacher_id",nullable = false)
-    private Integer teacherId;
 
-//    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL) // Quan hệ 1-n với đối tượng ở dưới (Person) (1 địa điểm có nhiều người ở)
-//    @EqualsAndHashCode.Exclude // không sử dụng trường này trong equals và hashcode
-//    @ToString.Exclude // Khoonhg sử dụng trong toString()
-//    private Collection<Student> student;
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+
+    @JoinTable(name = "enroll",
+            joinColumns = @JoinColumn(name = "course_id"),
+            inverseJoinColumns = @JoinColumn(name = "id")
+    )
+    private Collection<Student> student;
+
+    @OneToOne
+    @JoinColumn(name = "teacher_id")
+    private Teacher teacher;
 }

@@ -1,5 +1,7 @@
 package com.luvina;
 
+import java.util.ArrayList;
+
 public class Post {
     private long id;
     private String title;

@@ -1,6 +1,5 @@
 package com.luvina.net.LeQuyPhuc_CleanCode.service.strategy;
 
-import com.luvina.net.LeQuyPhuc_CleanCode.resource.response.CourseSubtype1Response;
 import com.luvina.net.LeQuyPhuc_CleanCode.service.SortStrategy;
 import com.luvina.net.LeQuyPhuc_CleanCode.service.dto.CourseDTO;
 

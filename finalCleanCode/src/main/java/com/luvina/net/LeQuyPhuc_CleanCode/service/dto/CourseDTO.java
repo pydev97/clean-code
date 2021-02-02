@@ -14,6 +14,6 @@ public class CourseDTO {
     private Integer id;
     private String name;
     private String location;
-    private Instant opened;
 	private String teacherName;
+	private Instant opened;
 }

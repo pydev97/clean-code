@@ -20,19 +20,16 @@ public class StudentService implements UserService {
     private UserRepository userRepository;
     @CachePut("student")
     @Override public RegisterResponse registerUser(RegisterRequest registerRequest) {
-        User user = new User();
-        user.setEmail(registerRequest.getEmail());
-        user.setName(registerRequest.getName());
-        user.setPassword(registerRequest.getPassword());
-        user  =  userRepository.save(user);
         Student student = new Student();
-        student.setUserId(user.getUserId());
         student.setYear(registerRequest.getStudent().getYear());
-        studentRepository.save(student);
-        RegisterResponse res = new RegisterResponse();
-        res.setEmail(user.getEmail());
-        res.setName(user.getName());
-        res.setPassword(user.getPassword());
-        return  res;
+        student.setEmail(registerRequest.getEmail());
+        student.setName(registerRequest.getName());
+        student.setPassword(registerRequest.getPassword());
+        student = studentRepository.save(student);
+        RegisterResponse response = new RegisterResponse();
+        response.setName(student.getName());
+        response.setEmail(student.getEmail());
+        response.setPassword(student.getPassword());
+        return response;
     }
 }

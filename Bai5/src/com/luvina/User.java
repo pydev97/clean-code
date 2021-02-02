@@ -14,6 +14,8 @@ public class User {
     }
 
     void deletePost(Post post) throws PostException {  //Nếu tác động lên dữ liệu nếu có lỗi thì hãy throw ra Exception
-
+        System.out.println("check post có tồn tại hay không");
+        System.out.println("nếu post không tồn tại thì throw exeption");
+        System.out.println("còn không thì thực hiện xoá");
     }
 }

@@ -21,20 +21,17 @@ public class TeacherService implements UserService {
 
     @CachePut("teacher")
     @Override public RegisterResponse registerUser(RegisterRequest registerRequest) {
-        User user = new User();
-        user.setEmail(registerRequest.getEmail());
-        user.setName(registerRequest.getName());
-        user.setPassword(registerRequest.getPassword());
-        user = userRepository.save(user);
         Teacher teacher = new Teacher();
-        teacher.setUserId(user.getUserId());
+        teacher.setEmail(registerRequest.getEmail());
+        teacher.setName(registerRequest.getName());
+        teacher.setPassword(registerRequest.getPassword());
         teacher.setExperiences(registerRequest.getTeacher().getExperiences());
         teacher.setPhone(registerRequest.getTeacher().getPhone());
-        teacherRepository.save(teacher);
-        RegisterResponse res = new RegisterResponse();
-        res.setEmail(user.getEmail());
-        res.setName(user.getName());
-        res.setPassword(user.getPassword());
-        return res;
+       teacher = teacherRepository.save(teacher);
+        RegisterResponse response = new RegisterResponse();
+        response.setEmail(teacher.getEmail());
+        response.setName(teacher.getName());
+        response.setPassword(teacher.getPassword());
+        return response;
     }
 }

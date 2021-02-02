@@ -1,22 +1,22 @@
 package com.luvina.net.LeQuyPhuc_CleanCode.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Table(name = "student")
 @Entity
 @Data
-public class Student  {
+@PrimaryKeyJoinColumn(name = "user")
+public class Student extends User {
 
-    @Id
-    @Column(name = "student_id")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_sequence_generator")
-    @SequenceGenerator(name = "student_sequence_generator", allocationSize = 1)
-    private Integer studentId;
     @Column(name = "year", nullable = false)
     private Integer year;
-    @Column(name = "user_id",nullable = false)
-    private Integer userId;
+
+    @ManyToMany(mappedBy = "student")
+    @EqualsAndHashCode.Exclude
+    private Collection<Course> course;
 
 }
