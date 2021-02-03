@@ -4,11 +4,11 @@
 
 ## Phần 1: Clean Code căn bản
 1. 5 mục tiêu chính của Clean Code là
-   - Mục tiêu 1
-   - Mục tiêu 2
-   - Mục tiêu 3
-   - Mục tiêu 4
-   - Mục tiêu 5
+   -  Mục tiêu 1: Source Code phải thanh lịch: "thanh lịch" - phải sạch sẽ, cảm thấy hứng thú khi đọc
+   -  Mục tiêu 2: Code đúng trọng tâm : Mỗi fucntion, mỗi class, mỗi module chỉ thực hiện một chức năng duy nhất, không bị phân tán, bởi các context xung quanh
+   -  Mục tiêu 3: Tối ưu số lượng các class, method, function ...
+   -  Mục tiêu 4: Code đơn giản, có trật tự và dễ bảo trì
+   -  Mục tiêu 5: Chạy tốt tất cả các case bình thường
 2. Đáp án của tôi là team C bởi vì:
    -  Lý do 1:Clean code không phải chỉ được nghe giảng, làm vài bài thực hành mà có thể áp dụng được ngay.Hoặc nếu coder mà có áp dụng được vào project thực tế thì cũng chỉ là áp dụng một cách máy móc.Cần thời gian, cần thử thách khi đó mới thấm nhuần được tư tưởng của clean code.
    -  Lý do 2: Nhưng clean code cũng không phải là một cái gì đó quá vi diệu, những cái nào dễ chúng ta nên áp dụng trước ví dụ như quy tắc đặt tên biến, dùng constant,enum,....Những cái khác khó như dùng design parten chẳng hạn có thể nghiên cứu và áp dụng dần dần.
@@ -21,10 +21,6 @@
 ## Phần 2: OOP và SOLID
 ### 1. Hãy lập trình Java để thực hiện thiết kế như hình vẽ
       [GraphicsEditor](https://github.com/pydev97/clean-code/tree/main/GraphicsEditor/src/com/luvina)
-
-### 2. Composition over Inheritance và DI
-Gõ link đến mã nguồn bài này vào đây
-
 
 ## Phần 3: Thiết kế CSDL Quan hệ theo đặc tả
       [ảnh thể hiện quan hệ](https://gsviec.com/blog/huong-dan-su-dung-markdown/)
@@ -81,7 +77,7 @@ Gõ link đến mã nguồn bài này vào đây
    -  [api tìm kiếm và sort](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/resource/CourseResource.java)
 ## Trắc nghiệm
     1.C  2.B   3.D   4.C   5.A
-    6.A  7.A   8.A   9.B  10.A
+    6.B  7.B   8.A   9.B  10.A
     11.D 12.C  13.B  14.A 15.D
-    16.B 17.D  18.C  19.D 20.A
-    21.A 22.C  23.D 24.A 25.C
+    16.B 17.D  18.C  19.C 20.B
+    21.A 22.C  23.B 24.A 25.C
