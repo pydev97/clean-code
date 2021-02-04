@@ -23,8 +23,8 @@
    [GraphicsEditor](https://github.com/pydev97/clean-code/tree/main/GraphicsEditor/src/com/luvina)
 
 ## Phần 3: Thiết kế CSDL Quan hệ theo đặc tả
-      [ảnh thể hiện quan hệ](https://gsviec.com/blog/huong-dan-su-dung-markdown/)
-      [File Dummy SQL](https://gsviec.com/blog/huong-dan-su-dung-markdown/)
+   -  [ảnh thể hiện quan hệ](https://gsviec.com/blog/huong-dan-su-dung-markdown/)
+   -  [File Dummy SQL](https://gsviec.com/blog/huong-dan-su-dung-markdown/)
 ## Phần 4: Thiết kế RESTful API
 1.Entity:User, Teacher, Student
    -  [User](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/entity/User.java)
