@@ -20,6 +20,6 @@ public class UserResource {
     @PostMapping(path = "/register-user", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation("Register user- user can be teacher or student")
     ResponseEntity<RegisterResponse> registerUser(@RequestBody RegisterRequest request) {
-        return ResponseEntity.ok(userServiceFactory.createService(request.getMode()).registerUser(request));
+        return ResponseEntity.ok(userServiceFactory.createService(request.getMode(),request.getEmail()).registerUser(request));
     }
 }
