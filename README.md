@@ -15,8 +15,8 @@
    -  Lý do 3:Cuối cùng là vì sự không hợp lí của 2 team còn lại: team A gặp bất lợi khi project phình to khó, dành thời gian refactor lại code gây tốn thời gian,tiền bạc mà chương trình có thể gây ra nhiều bug degrade, còn team B thì gặp bất lợi là tiến độ chậm -> chậm tiến độ nộp hàng -> khách hàng hẳn sẽ không thích sự thiếu chuyên nghiệp như vậy mặt khác áp dụng clean code ngay ban đầu các thành viên mới vào dự án chưa chắc đã có thể theo kịp.
 3. Tôi sẽ trả lời như sau:
    -  Đầu tiên là phải giải thích lí do cần clean code là gì, nêu ra cho họ lợi ích của việc clean code -> 5 lợi ích ở bài 1 phần 1
-4. Tôi sẽ chọn phương thức: int calculateSalaryAfterYears(int initialSalary, int NthYear);
-5.
+4. Tôi sẽ chọn phương thức: int calculateSalaryAfterYears(int initialSalary, int NthYear)
+5.  [bài 5 phần 1](https://github.com/pydev97/clean-code/tree/main/Phan%201)
 
 ## Phần 2: OOP và SOLID
 ### 1. Hãy lập trình Java để thực hiện thiết kế như hình vẽ
