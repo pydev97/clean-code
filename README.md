@@ -20,7 +20,7 @@
 
 ## Phần 2: OOP và SOLID
 ### 1. Hãy lập trình Java để thực hiện thiết kế như hình vẽ
-      [GraphicsEditor](https://github.com/pydev97/clean-code/tree/main/GraphicsEditor/src/com/luvina)
+   [GraphicsEditor](https://github.com/pydev97/clean-code/tree/main/GraphicsEditor/src/com/luvina)
 
 ## Phần 3: Thiết kế CSDL Quan hệ theo đặc tả
       [ảnh thể hiện quan hệ](https://gsviec.com/blog/huong-dan-su-dung-markdown/)
