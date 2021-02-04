@@ -43,7 +43,7 @@
 4.Response của API cần ẩn trường password hoặc convert thành ******.
    -  [File config logback](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/resources/logback-spring.xml)
    -  [File config masking parten](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/MaskingPatternLayout.java)
-   -  [File config log](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/LoggingConfiguration.java)
+   -  [File config log](https://github.com/pydev97/clean-code/tree/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/error)
    
 5.Tích hợp Swagger để sinh tài liệu cho API.
    -  [File config Swagger](https://github.com/pydev97/clean-code/blob/main/finalCleanCode/src/main/java/com/luvina/net/LeQuyPhuc_CleanCode/config/SwaggerConfig.java)[Truy cập swagger](http://localhost:8080/swagger-ui.html)
