@@ -1,6 +1,7 @@
 package com.luvina.net.LeQuyPhuc_CleanCode.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import javax.persistence.*;
 @Table(name = "teacher")
 @Entity
 @Data
+@NoArgsConstructor
 public class Teacher extends User {
     @Column(name = "phone", nullable = false)
     private String phone;

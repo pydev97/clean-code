@@ -9,6 +9,6 @@ import java.util.List;
 public class SortByOpened implements SortStrategy {
     @Override
     public void sort(List<CourseDTO> courses) {
-        courses.sort(Comparator.comparing(CourseDTO::getOpened));
+        courses.sort(Comparator.comparing(CourseDTO::getOpened).reversed());
     }
 }

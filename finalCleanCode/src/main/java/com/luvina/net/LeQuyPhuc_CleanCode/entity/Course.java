@@ -36,7 +36,9 @@ public class Course {
     )
     private Collection<Student> student;
 
-    @OneToOne
-    @JoinColumn(name = "teacher_id")
+    @ManyToOne
+    @JoinColumn(name = "teacher_id") 
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     private Teacher teacher;
 }

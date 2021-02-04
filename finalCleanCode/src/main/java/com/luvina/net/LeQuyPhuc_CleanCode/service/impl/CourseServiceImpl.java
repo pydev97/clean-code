@@ -31,10 +31,10 @@ public class CourseServiceImpl implements CourseService {
     static {
         strategies = new HashMap<>();
         strategies.put("name", new SortByName());
-        strategies.put("open", new SortByOpened());
+        strategies.put("opened", new SortByOpened());
     }
 
-//    @Cacheable(value = "course",key = "#keyword")
+//    @Cacheable(value = "course")
     @Override public CourseResponse sortCourse(String keyword, String orderName) {
         CourseResponse response = new CourseResponse();
         List<Course> courses = new ArrayList<>();
